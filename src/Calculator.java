@@ -12,11 +12,11 @@ public class Calculator {
         double operand1 = scanner.nextInt();
         System.out.println("Input operation's sing: ");
         String operation = scanner.next();
-        /*if( operation == scanner.next("abs"))
-        {
-            result = Math.abs(operand1);
+        /*if(operation == scanner.next("abs"))
+
+            result=Math.abs(operand1);
             System.out.println("Result: " + result);
-        }*/
+        */
         System.out.println("Input 2nd number: ");
         double operand2 = scanner.nextInt();
         scanner.close();
@@ -29,6 +29,8 @@ public class Calculator {
             case "*": result = operand1*operand2;
                 break;
             case "/": result = operand1/operand2;
+                break;
+            case "abs":  result = Math.abs(operand1);
                 break;
         }
         System.out.println("Result: " + result);
